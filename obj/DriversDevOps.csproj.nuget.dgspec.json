@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dragosboboluta\\OneDrive - Nagarro\\Repos\\DevOps\\DevOPS\\DriversDevOps\\DriversDevOps.csproj": {}
+    "C:\\Users\\drago\\OneDrive\\repos\\DevOps\\DriversDevOps.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dragosboboluta\\OneDrive - Nagarro\\Repos\\DevOps\\DevOPS\\DriversDevOps\\DriversDevOps.csproj": {
+    "C:\\Users\\drago\\OneDrive\\repos\\DevOps\\DriversDevOps.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dragosboboluta\\OneDrive - Nagarro\\Repos\\DevOps\\DevOPS\\DriversDevOps\\DriversDevOps.csproj",
+        "projectUniqueName": "C:\\Users\\drago\\OneDrive\\repos\\DevOps\\DriversDevOps.csproj",
         "projectName": "DriversDevOps",
-        "projectPath": "C:\\Users\\dragosboboluta\\OneDrive - Nagarro\\Repos\\DevOps\\DevOPS\\DriversDevOps\\DriversDevOps.csproj",
-        "packagesPath": "C:\\Users\\dragosboboluta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dragosboboluta\\OneDrive - Nagarro\\Repos\\DevOps\\DevOPS\\DriversDevOps\\obj\\",
+        "projectPath": "C:\\Users\\drago\\OneDrive\\repos\\DevOps\\DriversDevOps.csproj",
+        "packagesPath": "C:\\Users\\drago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\drago\\OneDrive\\repos\\DevOps\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dragosboboluta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\drago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,13 +38,34 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.14, )"
             },
@@ -72,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

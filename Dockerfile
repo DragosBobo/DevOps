@@ -22,4 +22,4 @@ RUN dotnet publish "DriversDevOps.csproj" -c Release -o /app/publish /p:UseAppHo
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "DriversDevOps.dll","--server.urls","http://0.0.0.0:5000"]
+ENTRYPOINT ["dotnet", "DriversDevOps.dll","--server.urls"]
