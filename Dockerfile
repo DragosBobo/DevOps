@@ -17,7 +17,7 @@ WORKDIR "/src/."
 RUN dotnet build "DriversDevOps.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "DriversDevOps.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "DriversDevOps.csproj" -c Release -o /app/publish /p:UseAppHost=true
 
 FROM base AS final
 WORKDIR /app
