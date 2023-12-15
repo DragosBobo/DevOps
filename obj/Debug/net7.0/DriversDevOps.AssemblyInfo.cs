@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DriversDevOps")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3fed79997d59b27dfd91dc00b5ea6f2b9732265")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1321f196eff2634544fa2219c053f41060fe8bf6")]
 [assembly: System.Reflection.AssemblyProductAttribute("DriversDevOps")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DriversDevOps")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,6 +14,11 @@ builder.Services.AddDbContext<DriverDbContext>(options => options.UseSqlServer(c
 
 var app = builder.Build();
 
+using (var serviceScope = app.Services.GetRequiredService<IServiceScopeFactory>().CreateScope())
+{
+    var dbContext = serviceScope.ServiceProvider.GetService<DriverDbContext>();
+    dbContext.Database.Migrate();
+}
 
 app.UseSwagger();
 app.UseSwaggerUI();
